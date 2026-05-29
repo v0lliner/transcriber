@@ -1,6 +1,6 @@
 # transcriber
 
-**Turn one long podcast video into 4–6 short vertical clips with subtitles — ready for Instagram, TikTok, and YouTube Shorts.**
+**Turn one long podcast video into short vertical clips with subtitles — ready for Instagram, TikTok, and YouTube Shorts.** You choose how many clips (5 by default, or 10, 20, as many as you want).
 
 - **You give it:** a long podcast video (the wide, landscape kind).
 - **You get back:** a handful of phone-shaped clips of the best moments, with animated word-by-word subtitles burned in — plus ready-to-paste captions.
@@ -47,7 +47,7 @@ This project is built to be run by **talking to [Claude Code](https://docs.claud
    ```
    /clip ~/Desktop/my-podcast.mp4
    ```
-3. **Wait.** Claude listens to the whole podcast, picks the best 4–6 moments, writes English subtitles if needed, cuts them, follows whoever's talking, adds the animated subtitles, and saves the finished videos. ~1 hour for a 2-hour podcast, mostly unattended.
+3. **Wait.** Claude listens to the whole podcast, picks the best moments (5 by default — or however many you ask for), writes English subtitles if needed, cuts them, follows whoever's talking, adds the animated subtitles, and saves the finished videos. ~1 hour for a 2-hour podcast, mostly unattended.
 4. **Done.** Your finished clips are in:
    ```
    projects/<your-podcast-name>/6_reels/
@@ -59,7 +59,7 @@ This project is built to be run by **talking to [Claude Code](https://docs.claud
 | You want… | Type this |
 |---|---|
 | Skip the intro/ads/a boring stretch | `/clip ~/Desktop/my-podcast.mp4 --exclude 0:00-2:30,55:10-58:00` |
-| More or fewer clips | `/clip ~/Desktop/my-podcast.mp4 --n 6` |
+| How many clips (any number; 5 by default) | `/clip ~/Desktop/my-podcast.mp4 --n 10` |
 | Approve the chosen moments before it builds | `/clip ~/Desktop/my-podcast.mp4 --review-picks` |
 
 ---
