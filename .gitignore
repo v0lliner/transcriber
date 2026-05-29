@@ -1,0 +1,26 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# OS / editor cruft
+.DS_Store
+
+# Secrets / env
+.env
+.env.*
+
+# Claude Code local state (the /clip skill under .claude/skills/ IS shipped)
+.claude/settings.local.json
+
+# Your podcasts, media, and editorial output stay LOCAL — never published.
+# The tool creates projects/<name>/ on demand; only the empty folder ships.
+projects/*
+!projects/.gitkeep
+
+# Local scratch / old experiments
+archive/
+
+# Misc
+.cache/
+*.log

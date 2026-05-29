@@ -1,0 +1,6 @@
+mlx-whisper>=0.4.0
+opencv-contrib-python>=4.10.0
+numpy>=1.26,<2.0
+tqdm>=4.66.0
+# mediapipe is installed transitively; YuNet via OpenCV contrib is what reframe uses
+mediapipe>=0.10.21
